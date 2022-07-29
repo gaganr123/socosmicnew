@@ -1,0 +1,104 @@
+#store-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  padding: 2rem 0;
+}
+
+.store-product {
+  /* border: 1px solid #eee; */
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.product-details {
+  text-align: center;
+  padding-bottom: 1rem;
+  /* background-color: #eee; */
+}
+
+.product-details h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-details p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  color: green;
+  font-weight: 700;
+}
+
+.product-details p span {
+  text-decoration: line-through;
+  color: red;
+  font-weight: normal;
+}
+
+.fb {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: blue;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.fb:hover {
+  background-color: rgb(18, 18, 214);
+  color: whitesmoke;
+}
+
+.insta {
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(#8a3ab9, #e95950, #bc2a8d, #cd486b);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.insta:hover {
+  background: linear-gradient(#b989d4, #c77c77, #c473aa, #ce8599);
+  color: whitesmoke;
+}
+.filter-box {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .filter-box {
+    display: inline-block;
+  }
+  .filter-box a {
+    margin-top: 4px;
+  }
+}
+.tabimage {
+  width: 60px;
+  height: 60px;
+}
+
+
+/*************************/
+/******Zoom pic ko***/
+figure.zoo {
+  background-position: 50% 50%;
+  position: relative;
+  width: 100px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+figure.zoo img:hover {
+  opacity: 0;
+}
+figure.zoo img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
